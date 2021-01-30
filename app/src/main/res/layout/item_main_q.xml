@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.github.florent37.shapeofview.shapes.RoundRectView android:layout_marginLeft="@dimen/itemHorizontalMargin"
+    android:layout_marginTop="@dimen/itemVerticalMargin"
+    android:layout_marginRight="@dimen/itemHorizontalMargin"
+    android:layout_marginBottom="@dimen/itemVerticalMargin"
+    android:id="@+id/rc"
+    style="@style/rc"
+    android:layout_width="match_parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:adjustViewBounds="true"
+            android:src="@drawable/bg_q"
+            android:id="@+id/ivThumb"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            app:layout_constraintTop_toTopOf="parent"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvContent"
+                style="@style/tvHead"
+                android:maxLines="3"
+                android:ellipsize="end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:paddingTop="@dimen/itemVerticalPadding"
+                android:paddingLeft="@dimen/itemHorizontalPadding"
+                android:paddingRight="@dimen/itemHorizontalPadding"
+                android:paddingBottom="@dimen/itemVerticalPadding"
+                android:text="Jio 5G explained: What does the solution mean to Reliance, and its users?"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rc" />
+
+            <TextView
+                android:paddingBottom="@dimen/itemVerticalPadding"
+                android:paddingRight="@dimen/itemHorizontalPadding"
+                android:paddingLeft="@dimen/itemHorizontalPadding"
+                android:gravity="bottom"
+                android:text="Jio 5G explained: What does the solution mean to Reliance, and its users?"
+                style="@style/tvHeadSub"
+                app:layout_constraintTop_toBottomOf="@id/rc"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:id="@+id/tvAuthor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.github.florent37.shapeofview.shapes.RoundRectView>
+

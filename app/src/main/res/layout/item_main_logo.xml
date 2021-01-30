@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.florent37.shapeofview.shapes.RoundRectView android:id="@+id/rc"
+    style="@style/rc"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="@dimen/itemHorizontalMargin"
+    android:layout_marginTop="@dimen/itemVerticalMargin"
+    android:layout_marginRight="@dimen/itemHorizontalMargin"
+    android:layout_marginBottom="@dimen/itemVerticalMargin"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:src="@drawable/logo_home"
+        android:id="@+id/ivThumb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerInside" />
+
+</com.github.florent37.shapeofview.shapes.RoundRectView>
+

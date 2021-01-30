@@ -1,0 +1,126 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_horizontal_margin_double">32dp</dimen>
+    <dimen name="activity_horizontal_margin_negative">-16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="itemVerticalPadding">10dp</dimen>
+    <dimen name="itemHorizontalPadding">10dp</dimen>
+    <dimen name="imageSize">110dp</dimen>
+
+
+    <dimen name="btnMinHeight">40dp</dimen>
+    <dimen name="btnMinWidthDialog">50dp</dimen>
+
+    <dimen name="itemVerticalMargin">5dp</dimen>
+    <dimen name="itemHorizontalMargin">5dp</dimen>
+    <dimen name="itemInternalVerticalPadding">2dp</dimen>
+    <dimen name="itemInternalHorizontalPadding">2dp</dimen>
+
+    <dimen name="etVerticalPadding">10dp</dimen>
+    <dimen name="etHorizontalPadding">8dp</dimen>
+
+    <dimen name="btnVerticalPadding">6dp</dimen>
+    <dimen name="btnHorizontalPadding">20dp</dimen>
+    <dimen name="btnSmallVerticalPadding">2dp</dimen>
+    <dimen name="btnSmallHorizontalPadding">20dp</dimen>
+    <dimen name="btnDialogVerticalPadding">6dp</dimen>
+    <dimen name="btnDialogHorizontalPadding">10dp</dimen>
+    <dimen name="btnCornerRadius">8dp</dimen>
+    <dimen name="btnCheckMargin">24dp</dimen>
+    <dimen name="tvButton">15sp</dimen>
+
+    <dimen name="tv">13sp</dimen>
+    <dimen name="tvHeadSub">15sp</dimen>
+    <dimen name="tvHead">18sp</dimen>
+    <dimen name="tvTitleSub">13sp</dimen>
+    <dimen name="tvTitle">21sp</dimen>
+
+    <dimen name="tvBottom">11sp</dimen>
+
+    <dimen name="tvLi">11sp</dimen>
+    <dimen name="tvLiHeadSub">13sp</dimen>
+    <dimen name="tvLiHead">15sp</dimen>
+
+    <dimen name="tvDisplay">28sp</dimen>
+
+    <dimen name="tvDisplaySmall">22sp</dimen>
+    <dimen name="tvDisplayDescription">18sp</dimen>
+    <dimen name="tvSnackBar">15sp</dimen>
+    <dimen name="tvNavigationChoice">15sp</dimen>
+    <dimen name="tvNavigationUserTypeChoice">14sp</dimen>
+    <dimen name="etText">16sp</dimen>
+    <dimen name="etTextAdd">14sp</dimen>
+    <dimen name="etHint">11sp</dimen>
+    <dimen name="etHintAdd">13sp</dimen>
+    <dimen name="etHintAddCurrency">11sp</dimen>
+    <dimen name="etError">12sp</dimen>
+
+    <dimen name="paddingSocialButton">8dp</dimen>
+
+    <dimen name="divider_size">1dp</dimen>
+
+    <!--intro screen-->
+    <dimen name="intro_title_size">35sp</dimen>
+    <dimen name="intro_desc_size">18sp</dimen>
+    <dimen name="page_indicator">10dp</dimen>
+    <dimen name="page_indicator_padding">5dp</dimen>
+    <dimen name="lang_image_width">140dp</dimen>
+    <dimen name="lang_image_height">100dp</dimen>
+    <dimen name="intro_lang_txt">16sp</dimen>
+
+    <dimen name="tool_bar_content_start">70dp</dimen>
+
+    <dimen name="total_height_halal">135dp</dimen>
+    <dimen name="total_width_halal">120dp</dimen>
+    <dimen name="halal_margin">20dp</dimen>
+    <dimen name="tick_image_size">36dp</dimen>
+    <dimen name="host_register_margin">15dp</dimen>
+    <dimen name="total_provide_height">100dp</dimen>
+
+    <!--home-->
+    <dimen name="tab_icon_padding">5dp</dimen>
+    <dimen name="tab_icon">66dp</dimen>
+    <dimen name="tab_image_padding">15dp</dimen>
+    <dimen name="tab_width">80dp</dimen>
+    <dimen name="tab_radius">33dp</dimen>
+
+    <!--search category-->
+    <dimen name="edit_drawable_padding">10dp</dimen>
+    <dimen name="edit_drawable_bottom">20dp</dimen>
+    <dimen name="edit_margin">20dp</dimen>
+    <dimen name="edit_fled">52dp</dimen>
+    <dimen name="edit_fled_apply">48dp</dimen>
+    <dimen name="credit_card_view">70dp</dimen>
+    <dimen name="credit_card_sub_view">60dp</dimen>
+    <!--Wishlist-->
+    <dimen name="wish_list_image">120dp</dimen>
+    <dimen name="wish_list_cate_image">35dp</dimen>
+    <dimen name="wish_list_btn_min_height">30dp</dimen>
+
+    <!--booking-->
+    <dimen name="cornerCardBook">10dp</dimen>
+    <dimen name="three_gap">3dp</dimen>
+    <dimen name="two_gap">2dp</dimen>
+
+    <!--Rating bar-->
+    <dimen name="rating_bar_min">16dp</dimen>
+    <dimen name="sixteen_sp">16sp</dimen>
+    <dimen name="five_dp">5dp</dimen>
+    <dimen name="eight_dp">5dp</dimen>
+    <dimen name="thirty_sp">30sp</dimen>
+    <dimen name="twenty_five_sp">25sp</dimen>
+    <dimen name="thirteen_dp">13dp</dimen>
+    <dimen name="twenty_five_dp">25dp</dimen>
+
+    <!--cal-->
+    <dimen name="calendarSelectionVerticalSpace">5dp</dimen>
+    <dimen name="calendarSelectionVerticalSpaceSelect">1dp</dimen>
+    <dimen name="hundred_fifty">150dp</dimen>
+    <dimen name="list_item_height">72dp</dimen>
+    <dimen name="image_hight">220dp</dimen>
+    <dimen name="padding_ten">10dp</dimen>
+
+
+</resources>

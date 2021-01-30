@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:gravity="center_vertical"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin_negative"
+    android:layout_marginTop="@dimen/itemVerticalMargin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin_negative"
+    android:layout_marginBottom="@dimen/itemVerticalMargin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:id="@+id/tv"
+    style="@style/tvLiHead"
+    android:maxLines="2"
+    android:minLines="2"
+    android:background="@color/cardGrayDark"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Volume 1"
+    xmlns:android="http://schemas.android.com/apk/res/android" />
+
+
+

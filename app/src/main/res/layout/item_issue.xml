@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:id="@+id/llContainer"
+    android:layout_margin="5dp"
+    android:background="@drawable/bg_issue"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <TextView
+        android:id="@+id/tvIssue"
+        style="@style/tvLiHead"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Issue 1"
+        xmlns:android="http://schemas.android.com/apk/res/android" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:gravity="center"
+        style="@style/tvLiHead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aug 15, 2020"
+        xmlns:android="http://schemas.android.com/apk/res/android" />
+
+</LinearLayout>

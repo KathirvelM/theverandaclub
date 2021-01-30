@@ -1,0 +1,601 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="toolbar" parent="@style/ThemeOverlay.AppCompat.ActionBar" />
+
+    <style name="appbar" parent="@style/ThemeOverlay.AppCompat.ActionBar" />
+
+    <style name="popup" parent="@style/ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.NoActionBar" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exit</item>
+    </style>
+
+    <style name="Dialog" parent="AppTheme">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowAnimationStyle">@style/DialogAnimation</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:gravity">center_vertical</item>
+
+    </style>
+
+    <style name="BottomSheetTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:colorBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="BottomSheet" >
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+        <!-- Set this to true if you want Full Screen without status bar -->
+        <item name="android:windowFullscreen">false</item>
+
+        <item name="android:windowIsFloating">false</item>
+
+        <item name="android:colorBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+        <!-- This is important! Don't forget to set window background -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="PinView" >
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+        <!-- Set this to true if you want Full Screen without status bar -->
+        <item name="android:windowFullscreen">false</item>
+
+        <item name="android:windowIsFloating">false</item>
+
+        <item name="android:colorBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+        <!-- This is important! Don't forget to set window background -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+
+    <!-- Splash Screen theme. -->
+
+    <!-- Splash Screen theme. -->
+
+    <style name="AppTheme.Dashboard" parent="AppTheme.NoActionBar">
+        <item name="android:windowTranslucentStatus" tools:targetApi="kitkat">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds" tools:targetApi="lollipop">true</item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@android:color/transparent
+        </item>
+    </style>
+
+
+
+    <style name="AppTheme.Base" parent="Base.Theme.AppCompat.Light">
+        <item name="android:autofilledHighlight" tools:targetApi="o">@android:color/transparent</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="AppTheme.Base">
+        <!-- <item name="android:homeAsUpIndicator">@drawable/ic_action_back</item>-->
+        <!-- Customize your theme here. -->
+        <item name="colorControlNormal">@color/colorControlNormal</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+        <item name="fontFamily">@font/roboto_light</item>
+
+        <item name="tv">@color/tv</item>
+        <item name="tvDisplay">@color/tvDisplay</item>
+        <item name="tvHead">@color/tvHead</item>
+        <item name="tvHeadSub">@color/tvHeadSub</item>
+        <item name="tvTitle">@color/tvTitle</item>
+        <item name="tvTitleSub">@color/tvTitleSub</item>
+        <item name="tvToolbar">@color/tvToolBar</item>
+        <item name="et">@color/et</item>
+        <item name="etHint">@color/etHint</item>
+        <item name="etBg">@color/etBgTint</item>
+        <item name="btn">@color/tvBtn</item>
+        <item name="btnTrans">@color/tv</item>
+
+        <item name="divider">@color/divider</item>
+        <item name="btnBg">@drawable/bg_button</item>
+
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+    </style>
+
+
+    <style name="_AppTheme" parent="AppTheme.Base">
+        <!--   <item name="android:homeAsUpIndicator">@drawable/ic_action_back</item>-->
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/_colorPrimaryDark</item>
+        <item name="colorAccent">@color/_colorAccent</item>
+        <item name="colorControlHighlight">@color/_colorAccent</item>
+        <item name="fontFamily">@font/roboto_light</item>
+        <item name="colorControlNormal">@color/_colorControlNormal</item>
+
+        <item name="tv">@color/_tv</item>
+        <item name="tvDisplay">@color/_tvDisplay</item>
+        <item name="tvHead">@color/_tvHead</item>
+        <item name="tvHeadSub">@color/_tvHeadSub</item>
+        <item name="tvTitle">@color/_tvTitle</item>
+        <item name="tvTitleSub">@color/_tvTitleSub</item>
+        <item name="tvToolbar">@color/_tvToolBar</item>
+        <item name="et">@color/_et</item>
+        <item name="etHint">@color/_etHint</item>
+        <item name="etBg">@color/_etBgTint</item>
+        <item name="btn">@color/_tvBtn</item>
+        <item name="btnTrans">@color/_tv</item>
+
+        <item name="btnBg">@drawable/_bg_button</item>
+        <item name="divider">@color/_divider</item>
+
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+    </style>
+
+    <style name="btn">
+        <item name="android:paddingRight">@dimen/btnHorizontalPadding</item>
+        <item name="android:paddingLeft">@dimen/btnHorizontalPadding</item>
+        <item name="android:paddingTop">@dimen/btnVerticalPadding</item>
+        <item name="android:paddingBottom">@dimen/btnVerticalPadding</item>
+        <item name="android:gravity">center</item>
+        <item name="android:minHeight">@dimen/btnMinHeight</item>
+        <item name="android:textColor">?attr/btn</item>
+        <item name="android:background">?attr/btnBg</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="btnRounded" parent="btn">
+        <item name="android:background">?attr/btnBgRounded</item>
+    </style>
+    <style name="btn_green">
+        <item name="android:paddingRight">@dimen/btnHorizontalPadding</item>
+        <item name="android:paddingLeft">@dimen/btnHorizontalPadding</item>
+        <item name="android:paddingTop">@dimen/btnVerticalPadding</item>
+        <item name="android:paddingBottom">@dimen/btnVerticalPadding</item>
+        <item name="android:gravity">center</item>
+        <item name="android:minHeight">@dimen/btnMinHeight</item>
+        <item name="android:textColor">?attr/btn</item>
+        <item name="android:background">?attr/btn_bg_green</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="fontFamily">@font/roboto_bold</item>
+    </style>
+    <style name="btn_small">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">?attr/btn</item>
+        <item name="android:background">?attr/btnBg</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="fontFamily">@font/roboto_bold</item>
+    </style>
+
+
+    <style name="btnGray" parent="btn">
+        <item name="android:background">@color/btnBgGray</item>
+    </style>
+
+    <style name="btnSmall" parent="btn">
+        <item name="android:minHeight">35dp</item>
+        <item name="android:paddingRight">@dimen/btnSmallHorizontalPadding</item>
+        <item name="android:paddingLeft">@dimen/btnSmallHorizontalPadding</item>
+        <item name="android:paddingTop">@dimen/btnSmallVerticalPadding</item>
+        <item name="android:paddingBottom">@dimen/btnSmallVerticalPadding</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="fontFamily">@font/roboto</item>
+    </style>
+
+    <style name="btnSmallRoundedLine" parent="btnSmall">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:background">@drawable/bg_button_rounded_line</item>
+    </style>
+
+    <style name="btnFill" parent="btn">
+        <item name="android:background">@drawable/bg_button_fill</item>
+    </style>
+
+    <style name="btnTrans" parent="btn">
+        <item name="android:background">?attr/btnTransBg</item>
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">@dimen/tvButton</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">?attr/btnTrans</item>
+    </style>
+
+    <style name="btnTransFill" parent="btnTrans">
+        <item name="android:background">?attr/btnTransBgFill</item>
+    </style>
+
+
+    <style name="btnDialog" parent="btn">
+        <item name="android:paddingRight">@dimen/btnDialogHorizontalPadding</item>
+        <item name="android:paddingLeft">@dimen/btnDialogHorizontalPadding</item>
+        <item name="android:paddingTop">@dimen/btnDialogVerticalPadding</item>
+        <item name="android:paddingBottom">@dimen/btnDialogVerticalPadding</item>
+        <item name="android:minHeight">@dimen/btnMinHeight</item>
+        <item name="android:minWidth">@dimen/btnMinWidthDialog</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">@dimen/tvButton</item>
+        <item name="android:textColor">?attr/colorAccent</item>
+    </style>
+
+    <style name="et">
+        <item name="android:lines">1</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColorHint">?attr/etHint</item>
+        <item name="android:textColor">?attr/tv</item>
+        <item name="android:textSize">@dimen/etText</item>
+        <item name="fontFamily">@font/roboto</item>
+        <item name="backgroundTint">?attr/etBg</item>
+        <item name="android:importantForAutofill" tools:targetApi="o">no</item>
+
+        <item name="android:paddingRight">@dimen/etHorizontalPadding</item>
+        <item name="android:paddingLeft">@dimen/etHorizontalPadding</item>
+        <item name="android:paddingTop">@dimen/etVerticalPadding</item>
+        <item name="android:paddingBottom">@dimen/etVerticalPadding</item>
+    </style>
+
+
+    <style name="etUnlimited">
+        <item name="android:textColorHint">?attr/etHint</item>
+        <item name="android:textColor">?attr/et</item>
+        <item name="android:textSize">@dimen/etText</item>
+        <item name="fontFamily">@font/roboto</item>
+        <item name="backgroundTint">?attr/etBg</item>
+        <item name="android:importantForAutofill" tools:targetApi="o">no</item>
+
+        <item name="android:paddingRight">@dimen/etHorizontalPadding</item>
+        <item name="android:paddingLeft">@dimen/etHorizontalPadding</item>
+        <item name="android:paddingTop">@dimen/etVerticalPadding</item>
+        <item name="android:paddingBottom">@dimen/etVerticalPadding</item>
+    </style>
+
+    <style name="et_payment">
+        <item name="android:lines">1</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColorHint">?attr/etHint</item>
+        <item name="android:textColor">?attr/et</item>
+        <item name="android:textSize">@dimen/etText</item>
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:importantForAutofill" tools:targetApi="o">no</item>
+
+        <item name="android:paddingRight">@dimen/activity_horizontal_margin</item>
+        <item name="android:paddingLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:paddingTop">@dimen/etVerticalPadding</item>
+        <item name="android:paddingBottom">@dimen/etVerticalPadding</item>
+    </style>
+
+    <style name="etAdd" parent="et">
+        <item name="android:textSize">@dimen/etTextAdd</item>
+    </style>
+
+    <style name="etPrice" parent="et">
+        <item name="android:textSize">12sp</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+
+    <style name="etAddMultiLine" parent="etAdd">
+        <item name="android:textSize">@dimen/etTextAdd</item>
+        <item name="android:lines">@null</item>
+        <item name="android:maxLines">@null</item>
+        <item name="android:minLines">3</item>
+        <item name="android:gravity">top</item>
+        <item name="android:inputType">textMultiLine|textNoSuggestions</item>
+    </style>
+
+
+    <style name="hintAdd" parent="tvHeadSub">
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:textColor">@color/colorAccentHalf</item>
+        <item name="android:textSize">@dimen/etHintAdd</item>
+    </style>
+
+    <style name="hintCurrency" parent="hintAdd">
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:textColor">@color/colorAccentHalf</item>
+        <item name="android:textSize">@dimen/etHintAddCurrency</item>
+    </style>
+
+    <style name="etLine" parent="et">
+        <item name="android:textSize">@dimen/etText</item>
+        <item name="android:drawablePadding">@dimen/edit_drawable_padding</item>
+        <item name="android:paddingBottom">@dimen/edit_drawable_bottom</item>
+        <item name="android:backgroundTint" tools:ignore="NewApi">@color/category_bg</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:paddingStart">5dp</item>
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:paddingEnd">5dp</item>
+        <item name="android:textColor">@color/category_defaullt</item>
+        <item name="android:textColorHint">@color/category_defaullt_lite</item>
+    </style>
+
+    <style name="etClick" parent="et">
+        <item name="android:completionThreshold">1</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:focusable">false</item>
+        <item name="android:editable">false</item>
+        <item name="android:inputType">none</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="etClickAdd" parent="etClick">
+        <item name="android:textSize">@dimen/etTextAdd</item>
+    </style>
+
+    <style name="til">
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:textColorHint">?attr/etHint</item>
+        <item name="android:textSize">@dimen/etText</item>
+        <item name="fontFamily">@font/roboto_light</item>
+        <item name="hintTextAppearance">@style/etError</item>
+        <item name="errorTextAppearance">@style/etHint</item>
+    </style>
+
+    <style name="etError">
+        <item name="android:textSize">@dimen/etHint</item>
+    </style>
+
+    <style name="etHint">
+        <item name="android:textSize">@dimen/etError</item>
+    </style>
+
+    <style name="radio">
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">@dimen/tvButton</item>
+        <item name="android:background">?attr/btnTransBg</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:textColor">?attr/btnTrans</item>
+        <item name="buttonTint">?attr/colorAccent</item>
+    </style>
+
+
+
+    <style name="tv">
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:textSize">@dimen/tv</item>
+        <item name="android:textColor">?attr/tv</item>
+        <item name="android:textColorHint">?attr/tv</item>
+    </style>
+
+    <style name="tvToolbar" parent="Base.TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">@dimen/tvTitle</item>
+        <item name="android:textColor">?attr/tvToolbar</item>
+        <item name="fontFamily">@font/roboto_light</item>
+    </style>
+
+    <style name="tvTitleSub">
+        <item name="fontFamily">@font/roboto_light</item>
+        <item name="android:textSize">@dimen/tvTitleSub</item>
+        <item name="android:textColor">?attr/tvTitleSub</item>
+        <item name="android:textColorHint">?attr/tvTitleSub</item>
+    </style>
+
+    <style name="tvHeadSub">
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">@dimen/tvHeadSub</item>
+        <item name="android:textColor">?attr/tvHeadSub</item>
+    </style>
+
+    <style name="tvHead">
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">@dimen/tvHead</item>
+        <item name="android:textColor">?attr/tvHead</item>
+        <item name="android:textColorHint">?attr/etHint</item>
+    </style>
+
+    <style name="tvDescription">
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:textSize">@dimen/tvHead</item>
+        <item name="android:textColor">?attr/tvHead</item>
+        <item name="android:textColorHint">?attr/etHint</item>
+    </style>
+
+    <style name="rc">
+        <item name="shape_roundRect_bottomLeftRadius">10dp</item>
+        <item name="shape_roundRect_bottomRightRadius">10dp</item>
+        <item name="shape_roundRect_topLeftRadius">10dp</item>
+        <item name="shape_roundRect_topRightRadius">10dp</item>
+        <item name="shape_roundRect_borderColor">@color/cardGrayDark</item>
+        <item name="shape_roundRect_borderWidth">1dp</item>
+        <item name="elevation">4dp</item>
+    </style>
+
+    <style name="rcCal">
+        <item name="shape_roundRect_bottomLeftRadius">3dp</item>
+        <item name="shape_roundRect_bottomRightRadius">3dp</item>
+        <item name="shape_roundRect_topLeftRadius">3dp</item>
+        <item name="shape_roundRect_topRightRadius">3dp</item>
+        <item name="shape_roundRect_borderColor">#636363</item>
+        <item name="shape_roundRect_borderWidth">1dp</item>
+
+    </style>
+
+    <style name="liContainer">
+        <item name="android:paddingLeft">@dimen/itemHorizontalPadding</item>
+        <item name="android:paddingRight">@dimen/itemHorizontalPadding</item>
+        <item name="android:paddingTop">@dimen/itemVerticalPadding</item>
+        <item name="android:paddingBottom">@dimen/itemVerticalPadding</item>
+    </style>
+    <style name="liContainer_list">
+        <item name="android:paddingLeft">@dimen/itemHorizontalPadding</item>
+        <item name="android:paddingRight">@dimen/itemHorizontalPadding</item>
+        <item name="android:paddingTop">@dimen/itemVerticalMargin</item>
+        <item name="android:paddingBottom">@dimen/itemVerticalPadding</item>
+    </style>
+    <style name="li">
+        <item name="android:paddingLeft">@dimen/itemInternalHorizontalPadding</item>
+        <item name="android:paddingRight">@dimen/itemInternalHorizontalPadding</item>
+        <item name="android:paddingTop">@dimen/itemInternalVerticalPadding</item>
+        <item name="android:paddingBottom">@dimen/itemInternalVerticalPadding</item>
+    </style>
+
+    <style name="tvLi" parent="li">
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:textSize">@dimen/tvLi</item>
+        <item name="android:textColor">@color/tv</item>
+        <item name="android:textColorHint">?attr/tv</item>
+    </style>
+
+    <style name="tvLiCategory" parent="tvLiCategoryList">
+        <item name="android:textColor">@color/_tvHeadSub</item>
+        <item name="background">@drawable/bg_li_category</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingTop">1dp</item>
+        <item name="android:paddingBottom">1dp</item>
+    </style>
+
+    <style name="tvLiCategoryList" parent="tvLi">
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="fontFamily">@font/roboto_bold</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="tvBottom">
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:textSize">@dimen/tvBottom</item>
+        <item name="android:textColor">@color/tv</item>
+        <item name="android:textColorHint">?attr/tv</item>
+    </style>
+
+    <style name="DatePickerThemeDialog" parent="android:Theme.Holo.Dialog">
+        <item name="android:datePickerMode" tools:targetApi="lollipop">spinner</item>
+        <item name="android:calendarViewShown">false</item>
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:textColor">@color/tvHead</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="colorControlNormal">@color/colorAccent</item>
+    </style>
+
+
+    <!--
+        <style name="rbLi" parent="@style/Widget.AppCompat.RatingBar.Indicator">
+            <item name="android:minHeight">8dp</item>
+            <item name="android:maxHeight">8dp</item>
+            <item name="android:progressDrawable">@drawable/ratingbar</item>
+        </style>
+
+
+        <style name="rb" parent="@style/Widget.AppCompat.RatingBar">
+            <item name="android:minHeight">25dp</item>
+            <item name="android:maxHeight">25dp</item>
+            <item name="android:progressDrawable">@drawable/ratingbar_big</item>
+        </style>
+    -->
+
+    <style name="tvLiHeadSub" parent="li">
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">@dimen/tvLiHeadSub</item>
+        <item name="android:textColor">?attr/tvHeadSub</item>
+        <item name="android:textColorHint">?attr/tvHeadSub</item>
+    </style>
+
+    <style name="tvLiHead" parent="li">
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">@dimen/tvLiHead</item>
+        <item name="android:textColor">?attr/tvHead</item>
+        <item name="android:textColorHint">?attr/tvHead</item>
+    </style>
+
+    <style name="tvDisplay">
+        <item name="fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">@dimen/tvDisplay</item>
+        <item name="android:textColor">?attr/tvDisplay</item>
+        <item name="android:textColorHint">?attr/tvDisplay</item>
+    </style>
+
+    <style name="tvDisplaySmall" parent="tvDisplay">
+        <item name="android:textSize">@dimen/tvDisplaySmall</item>
+    </style>
+
+    <style name="tvDisplayDescription" parent="tvDisplay">
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:textSize">@dimen/tvDisplayDescription</item>
+    </style>
+
+    <style name="tvDisplayAccent" parent="tvDisplay">
+        <item name="android:textColor">?attr/colorAccent</item>
+        <item name="android:textColorHint">?attr/colorAccent</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="tvSnackbar">
+        <item name="android:textSize">@dimen/tvSnackBar</item>
+        <item name="android:textColor">@color/tvSnackbar</item>
+        <item name="fontFamily">@font/roboto_light</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:background">@color/bgSnackBar</item>
+    </style>
+
+
+    <!-- - - -->
+    <!-- - - -->
+    <!--item -->
+    <!-- - - -->
+    <!-- - - -->
+    <style name="tvListError">
+        <item name="android:textSize">@dimen/tv</item>
+        <item name="android:textColor">@color/tv</item>
+        <item name="fontFamily">@font/roboto_light</item>
+    </style>
+
+    <style name="tvListErrorMore">
+        <item name="android:textSize">@dimen/tv</item>
+        <item name="android:textColor">@color/tv</item>
+        <item name="fontFamily">@font/roboto_light</item>
+    </style>
+
+    <style name="tvListNoItem">
+        <item name="android:textSize">@dimen/tv</item>
+        <item name="android:textColor">@color/tv</item>
+        <item name="fontFamily">@font/roboto_light</item>
+    </style>
+
+
+
+
+    <style name="MyPopupMenu" parent="@style/Widget.AppCompat.PopupMenu">
+        <item name="android:overlapAnchor" tools:targetApi="lollipop">true</item>
+        <item name="android:dropDownHorizontalOffset">0dp</item>
+        <item name="android:dropDownVerticalOffset">0dp</item>
+    </style>
+
+</resources>

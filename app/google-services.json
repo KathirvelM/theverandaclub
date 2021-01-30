@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1045309168441",
+    "firebase_url": "https://theverandahclub.firebaseio.com",
+    "project_id": "theverandahclub",
+    "storage_bucket": "theverandahclub.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1045309168441:android:d08036d7d5ad251d7c66e8",
+        "android_client_info": {
+          "package_name": "com.verandah.club"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1045309168441-7acld2kmp7og5nmmkktvgmehvqpdnafs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.verandah.club",
+            "certificate_hash": "17f083dbf4979ab69afe604e06fc4b7ba9dc21f8"
+          }
+        },
+        {
+          "client_id": "1045309168441-7aapuu7c60i3o4j1l8ta02fnidvd7vun.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA49kcfw1AOZwCY097PYm56Yh6m3hK5Rr0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1045309168441-7aapuu7c60i3o4j1l8ta02fnidvd7vun.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

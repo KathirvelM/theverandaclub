@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/itemHorizontalMargin"
+    android:layout_marginTop="@dimen/itemVerticalMargin"
+    android:layout_marginRight="@dimen/itemHorizontalMargin"
+    android:layout_marginBottom="@dimen/itemVerticalMargin">
+
+    <com.github.florent37.shapeofview.shapes.RoundRectView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        style="@style/rc"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.github.florent37.shapeofview.shapes.RoundRectView
+                android:id="@+id/rc"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintDimensionRatio="1.8"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/ivThumb"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/image_main_slider_2" />
+
+                <!--        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/bg_image_color" />-->
+
+            </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+            <TextView
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/itemHorizontalMargin"
+                android:paddingRight="@dimen/itemHorizontalMargin"
+                android:paddingBottom="@dimen/itemVerticalMargin"
+                android:id="@+id/tv"
+                style="@style/tvLiHeadSub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:minLines="2"
+                android:text="Jio 5G explained: What does the solution mean to Reliance, and its users?"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rc" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

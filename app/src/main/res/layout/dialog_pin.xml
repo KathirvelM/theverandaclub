@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <LinearLayout
+            android:id="@+id/flPin"
+            android:paddingLeft="8dp"
+            android:orientation="vertical"
+            android:paddingRight="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_marginBottom="-13dp"
+                    android:id="@+id/ivPinTop"
+                    android:rotation="180"
+                    android:layout_width="35dp"
+                    app:srcCompat="@drawable/ic_pin"
+                    android:layout_height="35dp" />
+
+                <FrameLayout
+                    android:clickable="true"
+                    android:background="@drawable/bg_pin"
+                    android:id="@+id/flContainer"
+                    android:minHeight="100dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </FrameLayout>
+
+                <ImageView
+                    android:visibility="gone"
+                    android:layout_marginTop="-13dp"
+                    android:id="@+id/ivPinBottom"
+                    android:layout_width="35dp"
+                    app:srcCompat="@drawable/ic_pin"
+                    android:layout_height="35dp" />
+
+        </LinearLayout>
+
+</FrameLayout>

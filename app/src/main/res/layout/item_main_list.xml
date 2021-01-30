@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.florent37.shapeofview.shapes.RoundRectView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rc"
+    style="@style/rc"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/itemHorizontalMargin"
+    android:layout_marginTop="@dimen/itemVerticalMargin"
+    android:layout_marginRight="@dimen/itemHorizontalMargin"
+    android:layout_marginBottom="@dimen/itemVerticalMargin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:adjustViewBounds="true"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:id="@+id/ivThumb"
+                android:layout_width="0dp"
+                app:layout_constraintDimensionRatio="1:1"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image_list_0" />
+
+            <LinearLayout
+                app:layout_constraintTop_toTopOf="parent"
+                style="@style/liContainer"
+                app:layout_constraintLeft_toRightOf="@id/ivThumb"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv"
+                    style="@style/tvLiHeadSub"
+                    android:maxLines="2"
+                    android:minLines="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jio 5G explained: What does the solution mean to Reliance, and its users?" />
+
+                <TextView
+                    tools:text="Sample Name"
+                    style="@style/tvLiCategoryList"
+                    android:id="@+id/tvCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    style="@style/tvLi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="3"
+                    android:minLines="3"
+                    android:ellipsize="end"
+                    android:text="Sleep is essential for optimal safety, mood, performance, and health. As one of the three pillars of a healthy lifestyle (the other two being diet and exercise), the amount of sleep you get can dramatically improve or hinder your quality of life in various ways. " />
+
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </LinearLayout>
+
+</com.github.florent37.shapeofview.shapes.RoundRectView>
+
+

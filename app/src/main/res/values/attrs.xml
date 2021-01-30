@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="tv" format="reference" />
+    <attr name="tvDisplay" format="reference" />
+    <attr name="tvHead" format="reference" />
+    <attr name="tvHeadSub" format="reference" />
+    <attr name="tvTitle" format="reference" />
+    <attr name="tvTitleSub" format="reference" />
+    <attr name="tvToolbar" format="reference" />
+
+    <attr name="et" format="reference" />
+    <attr name="etHint" format="reference" />
+    <attr name="etBg" format="reference" />
+    <attr name="btnTrans" format="reference" />
+    <attr name="btn" format="reference" />
+    <attr name="btnBg" format="reference" />
+    <attr name="btnBgRounded" format="reference" />
+    <attr name="btnTransBg" format="reference" />
+    <attr name="btnTransBgFill" format="reference" />
+    <attr name="btn_bg_green" format="reference" />
+    <attr name="divider" format="reference" />
+
+    <declare-styleable name="CreditCardEditText">
+        <attr name="separator" format="string" />
+    </declare-styleable>
+
+</resources>

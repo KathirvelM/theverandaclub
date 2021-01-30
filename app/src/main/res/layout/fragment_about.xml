@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/clContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <include layout="@layout/appbar" />
+
+
+    <ScrollView
+        android:clipToPadding="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:src="@drawable/logo_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:layout_marginTop="10dp"
+                style="@style/tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="orem Ipsum Press (LIP) is dedicated to Open Access Academic Publishing. LIP aims to publish novel and pioneering research work and findings of high scientific interest. It is our goal to provide a fast, effortless and costless service for publishing academic work. We offer a fast reviewing system that guarantees quick publication (six weeks) of the article, which will immediately be listed on our online archive for retrieval and reference purposes.
+\n
+\nLIP furthers the scientific society’s objective of excellence in academia, research, and education by open access publishing worldwide.
+\n
+\nIn July 2011 LIP issued the first CALL FOR PAPERS, for the Journal of Molecular Biochemistry. JMedBiochem is planned to proceed as a monthly publication, issuing one volume per year. We encourage all scientists in the broad area of Molecular Biochemistry to consider our Journal for publishing their work. Please visit us at: www.jmolbiochem.com
+\n
+\nIt is the vision of LIP to publish high quality research articles in the area of Molecular Biochemistry. We strongly believe that the open access publishing model will promote research and knowledge across the globe, since academics, researchers and students are provided with unrestricted access to high interest research articles." />
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

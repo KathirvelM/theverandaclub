@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorControlNormal">#7C000000</color>          <color name="_colorControlNormal">#80FFFFFF</color>
+    <color name="colorPrimary">#ffffff</color>                  <color name="_colorPrimary">#00c6ad</color>
+    <color name="colorPrimaryHalf">#CACACA</color>              <color name="_colorPrimaryHalf">#008874</color>
+    <color name="colorPrimaryDark">#ffffff</color>              <color name="_colorPrimaryDark">#04A38F</color>
+    <color name="colorAccent">#03AC96</color>                   <color name="_colorAccent">#ffffff</color>
+    <color name="colorAccentHalf">#009683</color>               <color name="_colorAccentHalf">#CFCFCF</color>
+    <color name="colorAccentLite">#4800FFDE</color>
+
+
+    <color name="menuColor">#535353</color>                     <color name="_menuColor">#fff</color>
+
+    <color name="colorGPlus">#D40C17</color>
+
+    <color name="bgSnackBar">#323232</color>
+    <color name="tvSnackbar">#FFFFFF</color>
+
+    <color name="tv">#1D1D1D</color>                            <color name="_tv">#1D1D1D</color>
+    <color name="tvDisplay">#1D1D1D</color>                     <color name="_tvDisplay">#FFFFFF</color>
+    <color name="tvHead">#292929</color>                        <color name="_tvHead">#F3F3F3</color>
+    <color name="tvHeadSub">#292929</color>                     <color name="_tvHeadSub">#F3F3F3</color>
+    <color name="tvTitle">#181818</color>                       <color name="_tvTitle">#F3F3F3</color>
+    <color name="tvTitleSub">#575757</color>                    <color name="_tvTitleSub">#ECECEC</color>
+    <color name="tvToolBar">#575757</color>                     <color name="_tvToolBar">#ECECEC</color>
+    <color name="tvBtn">#F5F5F5</color>                         <color name="_tvBtn">#444444</color>
+    <color name="tvNavigationChoice">#1D1D1D</color>
+
+    <color name="et">#3F3F3F</color>                            <color name="_et">#FFFFFF</color>
+    <color name="etHint">#9E9E9E</color>                        <color name="_etHint">#CFCFCF</color>
+    <color name="etBgTint">#99CCCCCC</color>                    <color name="_etBgTint">#99FFFFFF</color>
+
+    <color name="btnBgGray">#444444</color>
+
+    <color name="ripple">@color/colorAccent</color>             <color name="_ripple">@color/_colorAccent</color>
+    <color name="selector">@color/colorPrimaryHalf</color>      <color name="_selector">@color/_colorPrimaryHalf</color>
+    <color name="rippleAccent">@color/colorPrimary</color>      <color name="_rippleAccent">@color/_colorPrimary</color>
+    <color name="selectorAccent">@color/colorAccentHalf</color> <color name="_selectorAccent">@color/_colorAccentHalf</color>
+
+
+    <color name="ribbon">#2B2B2B</color>
+    <color name="ratting">#DAD9E1</color>
+    <color name="rattingFilled">#02CA9E</color>
+
+
+
+    <color name="colorAccentHalfLite">#9EE0D8</color>
+    <color name="colorAccentHalfLiteBg">#A69EE0D8</color>
+    <color name="etBgGray">#F5F5F5</color>
+    <color name="divider">#28161616</color>                     <color name="_divider">#28E6E6E6</color>
+
+    <color name="colorDialogScreen">#5B000000</color>
+    <color name="colorImageScreen">#4D000000</color>
+    <color name="colorImageScreen2">#56000000</color>
+    <color name="bg_image_color">#80000000</color>
+    <color name="roundedBorder">#D6D6D6</color>
+    <color name="white">#ffffff</color>
+    <color name="whitelight">#F2F2F2</color>
+    <color name="transperant_white">#33ffffff</color>
+
+
+    <!--navigation-->
+    <color name="switch_to_halal">#C1C1C1</color>
+    <color name="colorChip">#EFEFF4</color>
+
+    <!--category-->
+    <color name="category_image_default">#828282</color>
+    <color name="category_defaullt">#1F1A1A</color>
+    <color name="category_defaullt_lite">#868585</color>
+    <color name="category_bg">#FFEFEFF4</color>
+
+    <color name="same_shipp_addredd">#777575</color>
+
+
+    <color name="announce_title_unread">#292929</color>
+    <color name="announce_desc_unread">#777575</color>
+    <color name="announce_title_read">#777575</color>
+    <color name="announce_desc_read">#9E9E9E</color>
+
+
+
+    <color name="bgPin">#E9E9E9</color>
+    <!--booking-->
+    <color name="cardGray">#E9E9E9</color>
+    <color name="cardGrayDark">#CACACA</color>
+    <!--cart-->
+    <color name="red_delete">#F83D3D</color>
+
+    <color name="payment_success_tip">#48CD30</color>
+    <color name="halal_certificate">#34E796</color>
+
+    <color name="orange_waiting">#FF9800</color>
+    <color name="dialog_color">#EFF0F5</color>
+
+    <color name="invoice_value_gradient_start">#3D8C7A</color>
+    <color name="invoice_value_gradient_end">#4077AF</color>
+
+
+    <!--profile-->
+    <color name="black_lite">#353535</color>
+    <color name="green_tick">#B3E7A8</color>
+    <color name="date_amount">#7A87CE</color>
+    <color name="year_amount">#C06886</color>
+    <color name="black">#000</color>
+
+    <!--cal-->
+    <color name="cal_available">#FE0260</color>
+    <color name="cal_booked">#FDCD8A</color>
+    <color name="cal_unavailable">#6B6B6B</color>
+    <color name="booking_success">#C9FFF8</color>
+
+    <color name="color_1">#FFAB00</color>
+    <color name="color_2">#6200EA</color>
+    <color name="color_3">#00C853</color>
+    <color name="color_4">#D50000</color>
+    <color name="color_5">#0091EA</color>
+    <color name="color_6">#FFD600</color>
+    <color name="color_7">#607D8B</color>
+
+</resources>
