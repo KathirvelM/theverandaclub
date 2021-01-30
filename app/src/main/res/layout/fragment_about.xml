@@ -8,7 +8,6 @@
 
     <include layout="@layout/appbar" />
 
-
     <ScrollView
         android:clipToPadding="false"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
@@ -19,12 +18,10 @@
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:layout_height="match_parent">
 
-
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-
 
             <ImageView
                 android:src="@drawable/logo_about"
@@ -33,21 +30,20 @@
 
 
             <TextView
+                android:id="@+id/txt_aboutus"
                 android:layout_marginTop="10dp"
                 style="@style/tv"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:gravity="center"
-                android:text="orem Ipsum Press (LIP) is dedicated to Open Access Academic Publishing. LIP aims to publish novel and pioneering research work and findings of high scientific interest. It is our goal to provide a fast, effortless and costless service for publishing academic work. We offer a fast reviewing system that guarantees quick publication (six weeks) of the article, which will immediately be listed on our online archive for retrieval and reference purposes.
-\n
-\nLIP furthers the scientific society’s objective of excellence in academia, research, and education by open access publishing worldwide.
-\n
-\nIn July 2011 LIP issued the first CALL FOR PAPERS, for the Journal of Molecular Biochemistry. JMedBiochem is planned to proceed as a monthly publication, issuing one volume per year. We encourage all scientists in the broad area of Molecular Biochemistry to consider our Journal for publishing their work. Please visit us at: www.jmolbiochem.com
-\n
-\nIt is the vision of LIP to publish high quality research articles in the area of Molecular Biochemistry. We strongly believe that the open access publishing model will promote research and knowledge across the globe, since academics, researchers and students are provided with unrestricted access to high interest research articles." />
-
-
-
+                android:gravity="start"
+                android:text="   In ancient times, the term ‘verandah’ was a familiar to everyone, which now stands utopian. It was a place in houses where chit-chats on various topics happened and the elegant knowledge was passed on to generations. There were verandahs in almost every house. It was a place where not only young, old, relatives, and friends used but also unknown wayfarers. Everyone took their seat outside, where all were treated equally with respect and love.
+                                \n   Verandah Club is an initiative by few like-minds of Coimbatore who are interested to share information on various antiquities of Bharat, India. The objective of the club is to share the culturally diverse knowledge of the country through snippets, stories, experiences, journeys connected with Indian heritage, various temples of India and their importance, customs, rituals, philosophies, spirituality, games, festivals, sacred rivers, great personalities, religions etc. to everyone in a lucid and convincing manner. The trends of the past like arts, crafts, textiles, jewelries, foods, and lifestyles will also be traversed.
+                                \n   It also reasons why different things and habits became a part of culture. We tend to somehow think that much of our routine practices encircle superstitions, however, on deeper analysis we understand that it is born out of scientific enquiry, hygiene, and other factors in mind.
+                                \n   Over the years, there has been a lot of published books, websites, and materials (print and digital) which are all working to restore the forgotten practices of the country. The club provides a platform for the Ganges of cultures and Indian habits to be explored and enjoyed. The founders of Verandah Club realizing the need to facilitate this kind of pleasure under one roof formed this rejuvenated institution. Therefore, the club comes out with issues focusing on heritage and different aspects of country, which can rightfully be called the ‘treasure-house of cultural practices.’
+                                \n   The club assures to serve the purpose through every issue. Readers can give their feedbacks for the improvement of the institution. You are also welcomed to share your inputs, thoughts, contents and participate in publication, along with the team. All contents undergo the formal process of editing under due care of the editor.
+                                \n   This is for everyone who are interested in Indian culture and tradition, irrespective of age.
+                                \n   “Come on! Let’s share the joy of reminiscing and reliving our past.”
+                                " />
 
         </LinearLayout>
 

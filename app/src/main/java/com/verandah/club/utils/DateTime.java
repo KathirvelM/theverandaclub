@@ -34,7 +34,7 @@ public class DateTime {
     public static final String MY_TRIP_FORMAT = "MMM dd yyyy";
 
 
-    public static final String DISPLAY_DATE = "d MMM yyyy";
+    public static final String DISPLAY_DATE = "MMM yyyy";
     public static final String DISPLAY_DATE_DAY = "EEE, MMM d, yyyy";
     public static final String DISPLAY_TIME = "h:mm a";
     public static final String DISPLAY_DATE_TIME = "d MMM yyyy h:mm a";

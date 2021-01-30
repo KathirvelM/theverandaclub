@@ -123,11 +123,13 @@ public class NewsAdapter extends MyAdapter<MyAdapter.ItemViewHolder> {
             webView.setWebChromeClient(new WebChromeClient());
             Log.e("Content", articleData.getContent());
             String data = "<html><body>" + articleData.getContent().trim() + "</body></html>";
+            if(!data.contains("https://")){
+                data = data.replace("//www.youtube","https://www.youtube").replace("640","100%").replace("360","200");
+            }
             webView.loadData(data, "text/html", "UTF-8");
 
 
         }
-
 
         void setData(LinearLayout ll, TextView tv, ArticleData data) {
 
