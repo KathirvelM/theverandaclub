@@ -57,5 +57,7 @@
 
     <string name="continue_txt">CONTINUE</string>
     <string name="skip_txt">SKIP</string>
-
+    <string name="screen_about">AboutUs</string>
+    <string name="screen_tc">TermsConditions</string>
+    <string name="screen_privacy">Privacy</string>
 </resources>

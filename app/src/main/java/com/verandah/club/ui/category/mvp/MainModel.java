@@ -28,8 +28,7 @@ public class MainModel extends BaseModel implements MainContractor.Model {
     @Override
     public Disposable requestMain(String issueId,String categoryId) {
         return addRequest(
-                apiInterface
-                        .requestCategory(formData(categoryId),
+                apiInterface.requestCategory(formData(categoryId),
                                 formData(issueId)),
                 new DisposableSingleObserver<BaseResponse<CategoryResponse>>() {
                     @Override

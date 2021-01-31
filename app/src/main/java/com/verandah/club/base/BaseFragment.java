@@ -185,6 +185,11 @@ public abstract class BaseFragment extends Fragment implements FragmentInterface
         }
     }
 
+    public void openUrl(String url){
+        Intent i = new Intent(Intent.ACTION_VIEW);
+        i.setData(Uri.parse(url));
+        startActivity(i);
+    }
 
 //     public setDatePicker(){
 //

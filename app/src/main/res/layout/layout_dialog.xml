@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        style="@style/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/bg_image_color"
+        android:text="Join our subscribers list to get the latest articles,updates delivered directly to your inbox."
+        android:textScaleX="1.1" />
+
+    <EditText
+        android:id="@+id/edit_username"
+        style="@style/tvHeadSub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Your email address"
+        android:textColorHint="@color/cardGrayDark" />
+
+</LinearLayout>

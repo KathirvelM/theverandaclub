@@ -23,12 +23,18 @@ import retrofit2.http.Url;
 
 public interface ApiInterface {
 
+    String v = "v1/";
+
     /*LinkedIn*/
     @FormUrlEncoded
     @POST
     Call<JsonObject> requestInboxList(@Url String url,
                                       @Field("userid") String userId,
                                       @Field("booking_numbers[]") List<String> bookingNumber);
+
+    @FormUrlEncoded
+    @POST("news_letter")
+    Single<JsonObject> subscriberEmail(@Field("email") String email);
 
     @GET
     Call<JsonObject> getLinkedInoAuthToken(@Url String url);
@@ -39,14 +45,21 @@ public interface ApiInterface {
     @GET("about")
     Single<BaseResponse<AboutResponse>> getAbout();
 
+    @GET("terms")
+    Single<BaseResponse<AboutResponse>> getTermsConditions();
+
+    @GET("privacy")
+    Single<BaseResponse<AboutResponse>> getPrivacy();
+
+    @GET("contact")
+    Single<BaseResponse<ContactResponse>> getcontact();
+
     @GET("update_checker")
     Single<BaseResponse<VersionUpdateResponse>> checkUpdate();
 
-    String v = "v1/";
-
     @Multipart
     @Headers("x-api-key: 5e32e5b6-21e7-4bc4-ba0e-679b6fbd0ba5")
-    @POST(v+"home")
+    @POST(v + "home")
     Single<BaseResponse<MainResponse>> requestMain(
             @Part("fcm") RequestBody fcm,
             @Part("issue_id") RequestBody issue_id
@@ -54,7 +67,7 @@ public interface ApiInterface {
 
     @Multipart
     @Headers("x-api-key: 5e32e5b6-21e7-4bc4-ba0e-679b6fbd0ba5")
-    @POST(v+"category")
+    @POST(v + "category")
     Single<BaseResponse<CategoryResponse>> requestCategory(
             @Part("category_id") RequestBody category_id,
             @Part("issue_id") RequestBody issue_id
@@ -62,7 +75,7 @@ public interface ApiInterface {
 
     @Multipart
     @Headers("x-api-key: 5e32e5b6-21e7-4bc4-ba0e-679b6fbd0ba5")
-    @POST(v+"article")
+    @POST(v + "article")
     Single<BaseResponse<Article>> requestArticle(
             @Part("article_id") RequestBody article_id,
             @Part("issue_id") RequestBody issue_id
@@ -70,7 +83,7 @@ public interface ApiInterface {
 
     @Multipart
     @Headers("x-api-key: 5e32e5b6-21e7-4bc4-ba0e-679b6fbd0ba5")
-    @POST(v+"sponsored_ads")
+    @POST(v + "sponsored_ads")
     Single<BaseResponse<Article>> requestSponserAd(
             @Part("sponsored_ad_id") RequestBody article_id,
             @Part("issue_id") RequestBody issue_id

@@ -1,14 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.verandah.club.ui.main.MainActivity" >
+    tools:context="com.verandah.club.ui.main.MainActivity">
 
     <item
-        android:icon="@drawable/ic_nav_info"
         android:id="@+id/about"
-        android:orderInCategory="1"
-        app:showAsAction="always"
-        android:title="About"/>
+        android:title="About" />
+
+    <item
+        android:id="@+id/terms"
+        android:title="Terms &amp; Conditions" />
+    <item
+        android:id="@+id/privacy"
+        android:title="Privacy Policy" />
+
+    <item
+        android:id="@+id/contactus"
+        android:title="Contact Us" />
+
+    <item
+        android:id="@+id/subcription"
+        android:title="Subscription" />
 
 </menu>

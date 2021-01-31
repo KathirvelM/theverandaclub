@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.florent37.shapeofview.shapes.RoundRectView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rc"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/itemHorizontalMargin"
+    android:layout_marginTop="@dimen/itemVerticalMargin"
+    android:layout_marginRight="@dimen/itemHorizontalMargin"
+    android:layout_marginBottom="@dimen/itemVerticalMargin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+      <ImageView
+
+          android:id="@+id/img"
+          android:layout_width="60dp"
+          android:layout_gravity="center"
+          android:layout_height="60dp"/>
+
+            <TextView
+                android:id="@+id/tv"
+                style="@style/tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="" />
+
+
+
+
+
+    </LinearLayout>
+
+</com.github.florent37.shapeofview.shapes.RoundRectView>
+
+
