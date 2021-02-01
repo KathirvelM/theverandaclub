@@ -12,6 +12,9 @@ import com.bumptech.glide.Glide;
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
@@ -98,6 +101,13 @@ public class NewsActivity extends BaseActivity implements NewsContractor.View {
 
 
         setupToolBar();
+        MobileAds.initialize(context, new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(InitializationStatus initializationStatus) {
+            }
+        });
+        AdRequest adRequest = new AdRequest.Builder().build();
+        googleAdView.loadAd(adRequest);
 
         mainPresenter = new NewsPresenter(this,appRepository);
 
@@ -106,8 +116,7 @@ public class NewsActivity extends BaseActivity implements NewsContractor.View {
         // set the ad unit ID
         mInterstitialAd.setAdUnitId(getString(R.string.interstitial_full_screen));
 
-        AdRequest adRequest = new AdRequest.Builder()
-                .build();
+      //  AdRequest adRequest = new AdRequest.Builder().build();
 
         // Load ads into Interstitial Ads
      //   mInterstitialAd.loadAd(adRequest);
@@ -148,6 +157,9 @@ public class NewsActivity extends BaseActivity implements NewsContractor.View {
 
     @BindView(R.id.ivFav)
     ImageView ivFav;
+
+    @BindView(R.id.adView)
+    com.google.android.gms.ads.AdView googleAdView;
 
     @OnClick(R.id.ivFav)
     public void onClickFav(){

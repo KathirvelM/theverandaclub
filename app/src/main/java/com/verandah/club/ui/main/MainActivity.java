@@ -200,7 +200,7 @@ public class MainActivity extends BaseActivity implements MainContractor.View {
         bottomTabs = new BottomTabs(this, llTab, selectedId -> {
             switch (selectedId) {
                 case R.id.flAbout:
-                    currentFragment = replaceFragment(getSupportFragmentManager(), R.id.flContainer, AboutFragment.newInstance(getString(R.string.screen_about)), ResourceUtils.getString(R.string.tab_favourite));
+                    currentFragment = replaceFragment(getSupportFragmentManager(), R.id.flContainer, FavouriteFragment.newInstance(), ResourceUtils.getString(R.string.tab_favourite));
                     setTitle(ResourceUtils.getString(R.string.tab_favourite));
                     toolbar.setVisibility(View.VISIBLE);
                     bottomTabs.selectTab(findViewById(R.id.flAbout));

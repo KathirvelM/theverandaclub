@@ -9,6 +9,11 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdSize;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 import com.verandah.club.ui.news.NewsActivity;
 import com.verandah.club.PresenterInterface;
 import com.verandah.club.base.BaseFragment;
@@ -81,6 +86,9 @@ public class HomeFragment extends BaseFragment implements Type {
     @BindView(R.id.rv)
     RecyclerView rv;
 
+    @BindView(R.id.adView)
+     com.google.android.gms.ads.AdView googleAdView;
+
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
@@ -94,6 +102,17 @@ public class HomeFragment extends BaseFragment implements Type {
 
             }
         }));
+
+        MobileAds.initialize(context, new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(InitializationStatus initializationStatus) {
+            }
+        });
+
+        AdRequest adRequest = new AdRequest.Builder().build();
+     //   googleAdView.setAdUnitId(context.getString(R.string.bsanner_home_footer));
+    //    googleAdView.setAdSize(AdSize.BANNER);
+        googleAdView.loadAd(adRequest);
     }
 
     @Override

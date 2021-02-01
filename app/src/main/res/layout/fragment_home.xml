@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     android:id="@+id/clContainer"
     android:layout_width="match_parent"
     android:fitsSystemWindows="true"
@@ -11,7 +12,7 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="603dp"
         android:clipChildren="false"
         android:clipToPadding="false"
         android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -19,6 +20,15 @@
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingBottom="@dimen/activity_vertical_margin"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/bsanner_home_footer"
+        android:layout_gravity="bottom"
+        />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

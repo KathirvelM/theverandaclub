@@ -11,6 +11,10 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
@@ -30,6 +34,9 @@ public class FavouriteFragment extends BaseFragment implements Type {
 
     @BindView(R.id.rv)
     RecyclerView rv;
+
+    @BindView(R.id.adView)
+    com.google.android.gms.ads.AdView googleAdView;
 
     public static FavouriteFragment newInstance() {
         FavouriteFragment categoryFragment = new FavouriteFragment();
@@ -90,6 +97,14 @@ public class FavouriteFragment extends BaseFragment implements Type {
         super.onViewCreated(view, savedInstanceState);
 
         articleList = getFavArticles();
+
+        MobileAds.initialize(context, new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(InitializationStatus initializationStatus) {
+            }
+        });
+        AdRequest adRequest = new AdRequest.Builder().build();
+        googleAdView.loadAd(adRequest);
 
         rv.setAdapter(categoryAdapter=new FavouriteAdapter(containerList, new FavouriteAdapter.Listener() {
             @Override
